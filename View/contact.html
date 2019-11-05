@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html lang="zh-tw">
+<head>
+<meta http-equiv="Content-Type" content="charset=utf-8">
+<title>最新消息</title>
+<meta http-equiv="Description" content="艦娘,艦口雷,kancolle">
+<meta http-equiv="Keywords" content="艦娘,艦口雷,kancolle">
+	<link rel="stylesheet" type="text/css" href="../kan.css" >
+<script language="javascript">
+	function MenuOn(x){
+		obj=document.getElementById("submenu"+x).style.visibility="visible";
+	}
+	function MenuOff(x){
+		obj=document.getElementById("submenu"+x).style.visibility="hidden";
+	}
+</script>
+</head>
+
+<body>
+	<div class="contents">
+	<div class="menu">
+		<div id="menu1" onMouseOver="MenuOn(1)" onMouseOut="MenuOff(1)">
+		<a href="../index.html" class="menuhead">首頁</a>
+		<div class="submenu" id="submenu1">
+			<a href="about.html">關於我們</a>
+		</div>
+		</div>
+		
+		<div id="menu2" onMouseOver="MenuOn(2)" onMouseOut="MenuOff(2)">
+		<a href="new.html" class="menuhead">最新消息</a> 
+		<div class="submenu" id="submenu2">
+			<a href="new_twitter.html">營運情報</a>
+			<a href="new_twitter.html">PTT好文</a>
+			<a href="new_twitter.html">巴哈好文</a>
+			<a href="new_twitter.html">wiki情報</a>
+		</div>
+		</div>
+		
+		<div id="menu3" onMouseOver="MenuOn(3)" onMouseOut="MenuOff(3)">
+		<a href="wiki.html" class="menuhead">攻略</a>
+		<div class="submenu" id="submenu3">
+			<a href="wiki_ptt.html">NGA攻略</a>
+			<a href="wiki_ptt.html">PTT攻略</a>
+			<a href="wiki_ptt.html">巴哈攻略</a>
+			<a href="wiki_ptt.html">wiki攻略</a>
+		</div>
+		</div>
+	
+		<div id="menu4" onMouseOver="MenuOn(4)" onMouseOut="MenuOff(4)">
+		<a href="good.html" class="menuhead">好康</a>
+		<div class="submenu" id="submenu4">
+			<a href="good_pixiv.html">P站</a>
+			<a href="good_pixiv.html">PTT</a>
+			<a href="good_pixiv.html">巴哈</a>
+			<a href="good_pixiv.html">推特</a>
+		</div>
+		</div>
+			
+		<div id="menu5">
+		<a href="contact.html" class="menuhead">聯絡</a>
+		</div>
+
+	</div>
+		<h1 class="p1">聯絡我們</h1>
+		<div class="section">
+			<p>請填好下面表單後送出，若無法送出，請傳送到以下信箱<a href="etinufo168@gmail.com">etinufo168@gmail</a></p>
+			<form action="form.cgi" method="post">
+				<table>
+					<tr><td class="info">姓名</td><td><input type="text" name="namea" size="50"></td><td><span>*必填</span></td></tr>
+				<tr><td class="info">電話</td><td><input type="text" name="tel" size="50"></td><td><span>*必填</span></td></tr>
+				<tr><td class="info">電郵</td><td><input type="text" name="email" size="50"></td><td><span>*必填</span></td></tr>
+				<tr><td class="info">查詢身分</td>
+					<td><select name="item">
+					<option>元帥</option>
+                    <option>大將</option>
+                    <option>中將</option>
+                    <option>少將</option>
+                    <option>大佐</option>
+                    <option>中佐</option>
+                    <option>新米中佐</option>
+                    <option>少佐</option>
+                    <option>中堅少佐</option>
+					<option>新米少佐</option>
+					</select> <td></td></td>
+					</tr>
+				<tr><td class="info">意見回復</td>
+					<td><textarea name="contact" cols="30" rows="7">
+						</textarea></td><td></td></tr>
+				</table>
+				<p>
+				<button type="submit"><img src="../images/submit.gif" alt="送出"></button>
+				<button type="reset"><img src="../images/reset.gif" alt="重設"></button>
+<!--
+				<input type="submit" value="送出">
+					<input type="reset" value="重設">
+-->
+				</p>
+			</form>
+			</div>
+	<address>COPYRIGHT &copy BY DESIGN</address>
+	</div>
+	
+</body>
+</html>
